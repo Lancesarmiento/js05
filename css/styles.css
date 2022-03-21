@@ -1,0 +1,84 @@
+:root{
+    --title-font: 'Lobster Two', cursive;
+    --bg-color: #141E27;
+    --bg-image: url(https://images.unsplash.com/photo-1646518341370-975f42db7622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80);
+    --text-color: #f7f7ff;
+}
+
+body{
+    background: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+    color: var(--text-color)
+}
+
+h1{
+    font-family: var(--title-font);
+}
+
+body, .container, .photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {
+    min-height: 12rem;
+}
+
+.photo img{
+    width: 12rem;
+    border-radius: 100%;
+    z-index: 1;   
+    margin: 4rem 0;
+}
+
+.circle{
+    width: 15rem;
+    height: 2rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(284deg, rgba(0,0,0,0.2) 100%, rgba(240,236,227,1) 100%);
+    border-radius: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 215px;
+}
+
+.profile{
+    margin-top: 2rem;
+}
+
+.profile button{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.title{
+    border: 5px;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h1, h4{
+    padding: 0 0 1rem 0;
+}
+
+.social-icon{
+    padding: 0 1.2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    width: 25rem;
+    padding: 0 3rem;
+    border-radius: 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(284deg, rgba(0,0,0,0.4990371148459384) 100%, rgba(240,236,227,1) 100%);
+
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
